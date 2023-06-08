@@ -17,7 +17,7 @@ app.secret_key = 'abc' #set a secret_key to flask app instance
 #------------------
 app.config['MAIL_SERVER']='smtp.gmail.com'  
 app.config['MAIL_PORT']=465  
-app.config['MAIL_USERNAME'] = 'avinashimmadisetty10@gmail.com'  
+app.config['MAIL_USERNAME'] = 'YourGmailAccountName@gmail.com'  
 app.config['MAIL_PASSWORD'] = 'tpgwnqrhidutoqht'  
 app.config['MAIL_USE_TLS'] = False  
 app.config['MAIL_USE_SSL'] = True
@@ -27,7 +27,7 @@ def generateOTP():
     return random.randint(000000,999999) 
 
 def sendOTP(email,otp):
-    msg = Message('OTP',sender = 'avinashimmadisetty10@gmail.com', recipients = [email])  
+    msg = Message('OTP',sender = 'sendMail@gmail.com', recipients = [email])  
     msg.body = str(otp) 
     mail.send(msg)     
 #-----------------------------------------------------------------------------------------------------------------------------

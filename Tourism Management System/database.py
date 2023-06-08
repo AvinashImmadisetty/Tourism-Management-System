@@ -8,9 +8,9 @@ import mysql.connector
 #------------------
 mydb = mysql.connector.connect(
     host = 'localhost',
-    username = 'root',
-    password = 'Avinash@123',
-    database = 'tms')
+    username = 'Your database user name',
+    password = 'Your database password',
+    database = 'Your databse')
 
 mycursor = mydb.cursor()#creating a cursor to my database to execute the sql statments.
 #-----------------------------------------------------------------------------------------------------------------------------

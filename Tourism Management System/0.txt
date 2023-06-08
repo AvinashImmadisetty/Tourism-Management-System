@@ -1,0 +1,5 @@
+MYSQL DATABASE
+--------------
+host  = localhost
+username = root
+password = Avinash@123
